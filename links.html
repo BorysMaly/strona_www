@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssstyles.css">
+    <title>Document</title>
+    <script>
+        function pokaz(){
+            if (document.getElementById("li1").checked){
+                location.assign("https://pilkanozna.pl/")
+            }
+            if (document.getElementById("li2").checked){
+                location.assign("https://plk.pl/")
+            }
+            if (document.getElementById("li3").checked){
+                location.assign("https://szachy.com.pl/")
+            }
+            if (document.getElementById("li4").checked){
+                location.assign("https://polskihokej.eu/")
+            }
+            if (document.getElementById("li5").checked){
+                location.assign("https://brydz.pl/")
+            }
+            
+            
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about.html">Github</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Wybierz ulubioną dyscypline</h1>
+        <p><label><input type="radio" id="li1" name="spo"/>Piłka nozna</label></p>
+        <p><label><input type="radio" id="li2" name="spo"/>Koszykówka</label></p>
+        <p><label><input type="radio" id="li3" name="spo"/>Szachy</label></p>
+        <p><label><input type="radio" id="li4" name="spo"/>Hokej</label></p>
+        <p><label><input type="radio" id="li5" name="spo"/>Brydż</label></p>
+        <button class="przycisk"onclick="pokaz();">Wybierz</button></p>
+    </main>
+</body>
+</html>
